@@ -111,7 +111,11 @@
 <!-- F Section -->
 
 
-<!-- S Section Projets -->
+
+
+
+
+<!-- Section Projets -->
 <section id="projects" class="w-full bg-gray-900 py-20 px-6 text-white">
   <div class="max-w-6xl mx-auto">
     <h2 class="text-3xl md:text-5xl font-bold text-center mb-16">
@@ -119,39 +123,65 @@
     </h2>
 
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
-      
-      <!-- Projet Exemple -->
-      <a href="#" class="group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition transform hover:-translate-y-3 hover:shadow-indigo-600/50">
+      <!-- Projet 1 -->
+      <div onclick="openModal('modal1')" class="group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition transform hover:-translate-y-3 hover:shadow-indigo-600/50">
         <img src="https://cdn.pixabay.com/photo/2017/08/04/05/37/coming-soon-2579123_1280.jpg" alt="Projet 1" class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110">
         <div class="absolute inset-0 bg-black bg-opacity-60 flex flex-col justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-          <h3 class="text-xl font-bold mb-2">??????????????????????</h3>
-          <p class="text-gray-300 text-sm px-4 text-center">?????????????????????????????</p>
-        </div>
-      </a>
-
-      <a href="#" class="group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition transform hover:-translate-y-3 hover:shadow-indigo-600/50">
-        <img src="https://cdn.pixabay.com/photo/2017/08/04/05/37/coming-soon-2579123_1280.jpg" alt="Projet 2" class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110">
-        <div class="absolute inset-0 bg-black bg-opacity-60 flex flex-col justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-          <h3 class="text-xl font-bold mb-2">??????????????</h3>
-          <p class="text-gray-300 text-sm px-4 text-center">?????????????????????</p>
-        </div>
-      </a>
-
-      <a href="#" class="group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition transform hover:-translate-y-3 hover:shadow-indigo-600/50">
-        <img src="https://cdn.pixabay.com/photo/2017/08/04/05/37/coming-soon-2579123_1280.jpg" alt="Projet 3" class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110">
-        <div class="absolute inset-0 bg-black bg-opacity-60 flex flex-col justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-          <h3 class="text-xl font-bold mb-2">???????????????????</h3>
+          <h3 class="text-xl font-bold mb-2">????????????????????????????</h3>
           <p class="text-gray-300 text-sm px-4 text-center">?????????????????????????</p>
         </div>
-      </a>
+      </div>
 
+      <!-- Projet 2 -->
+      <div onclick="openModal('modal2')" class="group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition transform hover:-translate-y-3 hover:shadow-indigo-600/50">
+        <img src="https://cdn.pixabay.com/photo/2017/08/04/05/37/coming-soon-2579123_1280.jpg" alt="Projet 2" class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110">
+        <div class="absolute inset-0 bg-black bg-opacity-60 flex flex-col justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+          <h3 class="text-xl font-bold mb-2">?????????????????????????</h3>
+          <p class="text-gray-300 text-sm px-4 text-center">???????????????????????????????????</p>
+        </div>
+      </div>
+
+      <!-- Projet 3 -->
+      <div onclick="openModal('modal3')" class="group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition transform hover:-translate-y-3 hover:shadow-indigo-600/50">
+        <img src="https://cdn.pixabay.com/photo/2017/08/04/05/37/coming-soon-2579123_1280.jpg" alt="Projet 3" class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110">
+        <div class="absolute inset-0 bg-black bg-opacity-60 flex flex-col justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+          <h3 class="text-xl font-bold mb-2">?????????????????????????????????????</h3>
+          <p class="text-gray-300 text-sm px-4 text-center">?????????????????????????????????</p>
+        </div>
+      </div>
     </div>
   </div>
 </section>
-<!-- F Section -->
 
+<!-- Modal 1 -->
+<div id="modal1" class="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50 opacity-0 pointer-events-none transition-opacity duration-300">
+  <div class="bg-gray-900 rounded-2xl shadow-lg max-w-2xl w-full p-6 relative">
+    <button onclick="closeModal('modal1')" class="absolute top-3 right-3 text-gray-400 hover:text-white text-2xl">&times;</button>
+    <h3 class="text-2xl font-bold mb-4 text-indigo-500">??????????????????????????????????????????????</h3>
+    <img src="https://cdn.pixabay.com/photo/2017/08/04/05/37/coming-soon-2579123_1280.jpg" alt="" class="rounded-lg mb-4">
+    <p class="text-gray-300">??????????????????????????????????????????????.</p>
+  </div>
+</div>
 
+<!-- Modal 2 -->
+<div id="modal2" class="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50 opacity-0 pointer-events-none transition-opacity duration-300">
+  <div class="bg-gray-900 rounded-2xl shadow-lg max-w-2xl w-full p-6 relative">
+    <button onclick="closeModal('modal2')" class="absolute top-3 right-3 text-gray-400 hover:text-white text-2xl">&times;</button>
+    <h3 class="text-2xl font-bold mb-4 text-indigo-500">Projet Mystère</h3>
+    <img src="https://cdn.pixabay.com/photo/2017/08/04/05/37/coming-soon-2579123_1280.jpg" alt="" class="rounded-lg mb-4">
+    <p class="text-gray-300">????????????????????????????????????????????????</p>
+  </div>
+</div>
 
+<!-- Modal 3 -->
+<div id="modal3" class="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50 opacity-0 pointer-events-none transition-opacity duration-300">
+  <div class="bg-gray-900 rounded-2xl shadow-lg max-w-2xl w-full p-6 relative">
+    <button onclick="closeModal('modal3')" class="absolute top-3 right-3 text-gray-400 hover:text-white text-2xl">&times;</button>
+    <h3 class="text-2xl font-bold mb-4 text-indigo-500">Projet Mystère</h3>
+    <img src="https://cdn.pixabay.com/photo/2017/08/04/05/37/coming-soon-2579123_1280.jpg" alt="" class="rounded-lg mb-4">
+    <p class="text-gray-300">??????????????????????????????????????????????</p>
+  </div>
+</div>
 
 
 
@@ -165,7 +195,7 @@
 <section id="skills" class="w-full bg-gray-900 py-20 px-6 text-white">
   <div class="max-w-6xl mx-auto">
     <h2 class="text-3xl md:text-5xl font-bold text-center mb-16">
-      Langages & <span class="text-indigo-500">Outils</span>
+     Mes Langages & <span class="text-indigo-500">Outils</span>
     </h2>
 
     <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8">
