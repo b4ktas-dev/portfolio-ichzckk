@@ -110,52 +110,85 @@
 
 
 
-
 <section id="projects" class="w-full bg-gradient-to-b from-slate-600 via-black to-slate-600 py-20 px-6 text-white">
   <div class="max-w-6xl mx-auto">
     <h2 class="text-3xl md:text-5xl font-bold text-center mb-16">
       My <span class="text-indigo-500">Work</span>
     </h2>
 
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
-      
+    <!-- UNE SEULE GRILLE POUR ALIGNEMENT PARFAIT -->
+    <div id="projectsGrid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+      <!-- Project 1 -->
       <div onclick="openModal('modal1')" class="group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition transform hover:-translate-y-3 hover:shadow-indigo-600/50">
-        <img src="#" alt="Projet 1" class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110">
-        <div class="absolute inset-0 bg-black bg-opacity-60 flex flex-col justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-          <h3 class="text-xl font-bold mb-2">Project 1 </h3>
-          <p class="text-gray-300 text-sm px-4 text-center">Project 1 bio</p>
+        <img src="/portfolio/perso-portfolio-english/projectimg/perso-cardesign-img.png" alt="Project 1" class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110">
+        <div class="absolute inset-0 bg-black/60 flex flex-col justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+          <h3 class="text-xl font-bold mb-2">CARDESIGN</h3>
+          <p class="text-gray-300 text-sm px-4 text-center">HTML/CSS</p>
         </div>
       </div>
 
-
+      <!-- Project 2 -->
       <div onclick="openModal('modal2')" class="group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition transform hover:-translate-y-3 hover:shadow-indigo-600/50">
-        <img src="#" alt="Projet 2" class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110">
-        <div class="absolute inset-0 bg-black bg-opacity-60 flex flex-col justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+        <img src="#" alt="Project 2" class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110">
+        <div class="absolute inset-0 bg-black/60 flex flex-col justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
           <h3 class="text-xl font-bold mb-2">Project 2</h3>
           <p class="text-gray-300 text-sm px-4 text-center">Project-2 bio</p>
         </div>
       </div>
 
-
+      <!-- Project 3 -->
       <div onclick="openModal('modal3')" class="group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition transform hover:-translate-y-3 hover:shadow-indigo-600/50">
-        <img src="#" alt="Projet 3" class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110">
-        <div class="absolute inset-0 bg-black bg-opacity-60 flex flex-col justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+        <img src="#" alt="Project 3" class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110">
+        <div class="absolute inset-0 bg-black/60 flex flex-col justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
           <h3 class="text-xl font-bold mb-2">Project 3</h3>
           <p class="text-gray-300 text-sm px-4 text-center">Project-3 bio</p>
         </div>
       </div>
+
+      <!-- Extra projects (déjà DANS la même grille, cachés) -->
+      <div onclick="openModal('modal4')" class="extra-project hidden opacity-0 translate-y-3 will-change-transform group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition transform hover:-translate-y-3 hover:shadow-indigo-600/50 duration-500">
+        <img src="#" alt="Project 4" class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110">
+        <div class="absolute inset-0 bg-black/60 flex flex-col justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+          <h3 class="text-xl font-bold mb-2">Project 4</h3>
+          <p class="text-gray-300 text-sm px-4 text-center">Project 4 bio</p>
+        </div>
+      </div>
+
+      <div onclick="openModal('modal5')" class="extra-project hidden opacity-0 translate-y-3 will-change-transform group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition transform hover:-translate-y-3 hover:shadow-indigo-600/50 duration-500">
+        <img src="#" alt="Project 5" class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110">
+        <div class="absolute inset-0 bg-black/60 flex flex-col justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+          <h3 class="text-xl font-bold mb-2">Project 5</h3>
+          <p class="text-gray-300 text-sm px-4 text-center">Project 5 bio</p>
+        </div>
+      </div>
+
+      <div onclick="openModal('modal6')" class="extra-project hidden opacity-0 translate-y-3 will-change-transform group relative overflow-hidden rounded-2xl shadow-lg cursor-pointer transition transform hover:-translate-y-3 hover:shadow-indigo-600/50 duration-500">
+        <img src="#" alt="Project 6" class="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110">
+        <div class="absolute inset-0 bg-black/60 flex flex-col justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+          <h3 class="text-xl font-bold mb-2">Project 6</h3>
+          <p class="text-gray-300 text-sm px-4 text-center">Project 6 bio</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bouton toggle -->
+    <div class="mt-10 text-center">
+      <button id="toggleProjects" class="px-6 py-3 rounded-xl bg-indigo-500 hover:bg-indigo-600 font-semibold shadow-lg transition">
+        See more projects
+      </button>
     </div>
   </div>
 </section>
 
-
+<!-- Tes MODALS existants (inchangés) -->
 <div id="modal1" class="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50 opacity-0 pointer-events-none transition-opacity duration-300">
   <div class="bg-gray-900 rounded-2xl shadow-lg max-w-2xl w-full p-6 relative">
     <button onclick="closeModal('modal1')" class="absolute top-3 right-3 text-gray-400 hover:text-white text-2xl">&times;</button>
-    <h3 class="text-2xl font-bold mb-4 text-indigo-500">Project 1</h3>
-    <img src="#" alt="" class="rounded-lg mb-4">
-    <p class="text-gray-300">Project-1 bio</p>
-    <a href="#" target="_blank" class="text-indigo-500 hover:underline mt-2 inline-block">View Project</a>
+    <h3 class="text-2xl font-bold mb-4 text-indigo-500">Project CARDESIGN (my first Landing Page)</h3>
+    <img src="/portfolio/perso-portfolio-english/projectimg/perso-cardesign-img.png" alt="" class="rounded-lg mb-4">
+    <p class="text-gray-300">This project, CarDesign, is my very first landing page built with pure HTML and CSS, inspired by a Figma concept. It showcases a luxury car brand, featuring a sleek layout with branding elements, counters, and a reservation section for high-end vehicles.
+Although not perfect, I intentionally kept it as it is, because it represents my starting point in web design. This project required a lot of time and dedication, but it allowed me to progress quickly in design fundamentals and apply responsive techniques for the first time.</p>
+    <a href="https://perso-cardesign-figma-landingpage.vercel.app/" target="_blank" class="text-indigo-500 hover:underline mt-2 inline-block">View Project</a>
   </div>
 </div>
 
@@ -179,6 +212,87 @@
   </div>
 </div>
 
+<!-- Nouveaux modals (si tu en veux pour 4/5/6 — structure identique) -->
+<div id="modal4" class="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50 opacity-0 pointer-events-none transition-opacity duration-300">
+  <div class="bg-gray-900 rounded-2xl shadow-lg max-w-2xl w-full p-6 relative">
+    <button onclick="closeModal('modal4')" class="absolute top-3 right-3 text-gray-400 hover:text-white text-2xl">&times;</button>
+    <h3 class="text-2xl font-bold mb-4 text-indigo-500">Project 4</h3>
+    <img src="#" alt="" class="rounded-lg mb-4">
+    <p class="text-gray-300">Project-4 bio</p>
+    <a href="#" target="_blank" class="text-indigo-500 hover:underline mt-2 inline-block">View Project</a>
+  </div>
+</div>
+
+<div id="modal5" class="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50 opacity-0 pointer-events-none transition-opacity duration-300">
+  <div class="bg-gray-900 rounded-2xl shadow-lg max-w-2xl w-full p-6 relative">
+    <button onclick="closeModal('modal5')" class="absolute top-3 right-3 text-gray-400 hover:text-white text-2xl">&times;</button>
+    <h3 class="text-2xl font-bold mb-4 text-indigo-500">Project 5</h3>
+    <img src="#" alt="" class="rounded-lg mb-4">
+    <p class="text-gray-300">Project-5 bio</p>
+    <a href="#" target="_blank" class="text-indigo-500 hover:underline mt-2 inline-block">View Project</a>
+  </div>
+</div>
+
+<div id="modal6" class="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50 opacity-0 pointer-events-none transition-opacity duration-300">
+  <div class="bg-gray-900 rounded-2xl shadow-lg max-w-2xl w-full p-6 relative">
+    <button onclick="closeModal('modal6')" class="absolute top-3 right-3 text-gray-400 hover:text-white text-2xl">&times;</button>
+    <h3 class="text-2xl font-bold mb-4 text-indigo-500">Project 6</h3>
+    <img src="#" alt="" class="rounded-lg mb-4">
+    <p class="text-gray-300">Project-6 bio</p>
+    <a href="#" target="_blank" class="text-indigo-500 hover:underline mt-2 inline-block">View Project</a>
+  </div>
+</div>
+
+<script>
+  // Toggle des projets supplémentaires (anim fade + slide-up)
+  const toggleBtn = document.getElementById('toggleProjects');
+  const extras = document.querySelectorAll('.extra-project');
+  let openExtras = false;
+
+  toggleBtn.addEventListener('click', () => {
+    openExtras = !openExtras;
+    if (openExtras) {
+      extras.forEach((card, i) => {
+        card.classList.remove('hidden');
+        // petit décalage pour un effet stagger
+        setTimeout(() => {
+          card.classList.remove('opacity-0','translate-y-3');
+        }, 40 * i);
+      });
+      toggleBtn.textContent = "Close projects";
+    } else {
+      // anim sortie puis hide
+      let remaining = extras.length;
+      extras.forEach((card) => {
+        card.classList.add('opacity-0','translate-y-3');
+        card.addEventListener('transitionend', function onEnd() {
+          card.classList.add('hidden');
+          card.removeEventListener('transitionend', onEnd);
+          if(--remaining === 0){
+            toggleBtn.textContent = "See more projects";
+          }
+        }, { once:true });
+      });
+    }
+  });
+
+  // Tes fonctions modals existantes (si déjà dans ta page, garde les tiennes)
+  function openModal(id) {
+    const m = document.getElementById(id);
+    if (!m) return;
+    m.classList.remove('opacity-0','pointer-events-none');
+    // fermer au clic fond
+    m.addEventListener('click', (e) => { if (e.target === m) closeModal(id); }, { once:true });
+    // ESC
+    const onEsc = (e)=>{ if(e.key==='Escape'){ closeModal(id); document.removeEventListener('keydown', onEsc); } };
+    document.addEventListener('keydown', onEsc);
+  }
+  function closeModal(id) {
+    const m = document.getElementById(id);
+    if (!m) return;
+    m.classList.add('opacity-0','pointer-events-none');
+  }
+</script>
 
 
 
